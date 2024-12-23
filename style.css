@@ -1,0 +1,49 @@
+/* Tozalash */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 ustun */
+    gap: 20px; /* Qutilar orasidagi masofa */
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    background-color: #8c42bd;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 5px;
+    align-content: flex-start; /* To'rtburchaklarni yuqoriga joylashtirish */
+    border-radius: 10px;
+}
+
+.square {
+    width: 30px;
+    height: 30px;
+    background-color: #ff8c00;
+    border-radius: 10px;
+}
+
+/* Vertikal joylashuv */
+.vertical {
+    flex-direction: column;
+}
+
+/* Pastdan boshlanadigan blok */
+.bottom {
+    align-items: flex-end;
+}
